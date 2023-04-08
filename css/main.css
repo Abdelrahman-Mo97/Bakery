@@ -1,0 +1,755 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+body {
+    font-family: 'Alegreya Sans', sans-serif
+}
+
+/**************************/
+/*Start Nav*/
+/**************************/
+nav{
+    background-color: rgb(0, 0, 0, 0.3);
+}
+nav div.container{
+    width: 80%;
+    margin: auto
+}
+div.logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%
+}
+div.logo img{
+    width: 40%
+}
+div.links-nav{
+    display: inline-block;
+    vertical-align: middle
+}
+nav .links-nav ul{
+    list-style-type: none
+}
+nav .links-nav ul li{
+    padding: 0;
+    display: inline-block;
+    padding-left: 20px
+}
+nav .links-nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 15px;
+    color: white;
+    transition: color 0.5s ease;
+    font-family: 'Times New Roman', Times, serif
+}
+nav .links-nav ul li a:hover{
+    color: #8e7754
+}
+/**************************/
+/*End Nav*/
+/**************************/
+
+/**********************/
+/*Start Header Section*/
+/**********************/
+header {
+    height: 100vh;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+}
+.bg {
+    background-color: rgb(0, 0, 0, 0.3);
+    /* padding-top: 100px; */
+    height: 100%;
+}
+header div.content-Header {
+    width: 53%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+/*Text Header*/
+header div.content-Header .text-header p.first-pharagraph-header {
+    font-size: 22px;
+    margin-bottom: 5px;
+    line-height: 1.86em;
+    color: rgba(255, 255, 255, 0.699)
+}
+header div.content-Header .text-header h1{
+    font-size: 76px;
+    margin-bottom: 18px;
+    line-height: 1.2em;
+    font-family: Arial, Helvetica, sans-serif
+}
+header div.content-Header .text-header p.second-pharagraph-header{
+    font-size: 26px;
+    margin-bottom: 18px;
+    line-height: 1.86em;
+    color: rgba(255, 255, 255, 0.699)
+}
+
+/*Button Header*/
+div.button-header button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s ease
+}
+div.button-header button{
+    padding: 15px 28px;
+    border-radius: 5px;
+    cursor: pointer
+}
+div.button-header button.left-button-header{
+    border: 2px solid transparent;
+    background-color: #8e7754;
+    margin-right: 5px;
+    transition: all 0.5s ease
+}
+div.button-header button.left-button-header:hover{
+    background-color: white
+}
+div.button-header button.left-button-header:hover a{
+    color: black
+}
+div.button-header button.right-button-header{
+    border: 2px solid white;
+    background-color: transparent;
+    transition: all 0.5s ease
+}
+div.button-header button.right-button-header:hover{
+    background-color: white
+}
+div.button-header button.right-button-header:hover a{
+    color: black
+}
+
+/*Start Media Query of Header Section*/
+@media (max-width:767px) {
+    header {
+        height: 100vh;
+    }
+    header div.content-Header {
+        width: 100%;
+    }
+    header div.content-Header .text-header p.first-pharagraph-header {
+        font-size: 30px;
+    }
+    header div.content-Header .text-header h1 {
+        font-size: 45px;
+    }
+    header div.content-Header .text-header p.second-pharagraph-header {
+        font-size: 18px;
+    }
+}
+@media (min-width:767px) and (max-width:992px) {
+    header {
+        height: 100vh;
+    }
+    header div.content-Header {
+        width: 100%;
+    }
+    header div.content-Header .text-header p.first-pharagraph-header {
+        font-size: 27px;
+    }
+    header div.content-Header .text-header h1 {
+        font-size: 52px;
+    }
+    header div.content-Header .text-header p.second-pharagraph-header {
+        font-size: 24px;
+    }
+}
+@media (min-width:992px) and (max-width:1400px) {
+    header {
+        height: 100vh;
+    }
+    header div.content-Header {
+        width: 100%;
+    }
+    header div.content-Header .text-header p.first-pharagraph-header {
+        font-size: 27px;
+    }
+    header div.content-Header .text-header h1 {
+        font-size: 52px;
+    }
+    header div.content-Header .text-header p.second-pharagraph-header {
+        font-size: 24px;
+    }
+}
+
+/*End Media Query of Header Section*/
+
+/********************/
+/*End Header Section*/
+/********************/
+
+/**************************/
+/*Start Definition Section*/
+/**************************/
+#Definition div.container{
+    width: 80%;
+    margin: 70px auto;
+}
+div.img-section-definition{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+div.img-section-definition img{
+    width: 100%;
+}
+div.text-section-definition{
+    width: calc(90% - 50%);
+    display: inline-block;
+    margin-left: 55px;
+}
+div.text-section-definition h2,
+div.left-side-location-section h2,
+div.title h2,
+div.left-side-contact-section h2
+{
+    color: #303030;
+    line-height: 1.38em;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    position: relative;
+}
+div.text-section-definition h2::after,
+div.left-side-location-section h2::after,
+div.left-side-contact-section h2::after
+{
+    content: '';
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent #686868 transparent transparent;
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div.text-section-definition h2:hover::after,
+div.left-side-location-section h2:hover::after, 
+div.left-side-contact-section h2:hover::after 
+{
+    border-color: transparent rgb(167, 178, 10) transparent transparent;
+}
+div.text-section-definition p,
+div.left-side-location-section p,
+div.title p,
+div.img-baking p,
+div.left-side-contact-section p 
+{
+    font-size: 17px;
+    line-height: 1.86em;
+    color: #686868;
+}
+ul.fa-ul {
+    margin-left: 1.5em;
+    margin-top: 2em;
+}
+ul.fa-ul li,
+.left-side-contact-section ul li
+{
+    padding: 15px 0 15px 30px;
+    font-size: 17px;
+    color: #686868;
+    margin-bottom: 2px;
+    line-height: 1.86em;
+}
+ul.fa-ul li:hover i,
+div.left-side-contact-section ul li:hover i
+{
+    color: rgb(167, 178, 10);
+}
+/*Start Media Query of Definition Section*/
+@media (max-width:767px){
+    #Definition div.container {
+        width: 90%;
+        margin: 70px auto;
+    }
+    div.img-section-definition {
+        width: 90%;
+        display: block;
+        margin: 30px auto;
+    }
+    div.text-section-definition {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+    ul.fa-ul {
+        margin-left: 1.5em;
+        margin-top: 1em;
+    }
+    ul.fa-ul li {
+        line-height: 1em;
+    }
+}
+@media (min-width:767px) and (max-width:850px) {
+    #Definition div.container {
+        width: 90%;
+        margin: 70px auto;
+    }
+    div.img-section-definition {
+        width: 70%;
+        display: block;
+        margin: 30px auto;
+    }
+    div.text-section-definition {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    div.text-section-definition h2 {
+        margin-bottom: 5px;
+    }
+    ul.fa-ul li {
+        margin-bottom: 2px;
+        line-height: 1em;
+    }
+}
+
+@media (min-width:850px) and (max-width:1200px) {
+    #Definition div.container {
+        width: 90%;
+        margin: 70px auto;
+    }
+    div.img-section-definition {
+        width: 50%;
+        margin-top: 30px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    div.text-section-definition {
+        width: 40%;
+        display: inline-block;
+    }
+    div.text-section-definition h2 {
+        margin-bottom: 5px;
+    }
+    div.text-section-definition p {
+        font-size: 16px;
+    }
+    ul.fa-ul {
+        margin-top: 1em;
+    }
+    ul.fa-ul li {
+
+        line-height: 1em;
+    }
+}
+
+/*End Media Query of Definition Section*/
+
+/**************************/
+/*End Definition Section*/
+/**************************/
+
+/**************************/
+/*Start Location Section*/
+/**************************/
+section#Location {
+    background-color: #eee
+}
+#Location div.container {
+    width: 80%;
+    margin: 70px auto;
+    padding: 70px 0
+}
+div.left-side-location-section {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top
+}
+div.img-right-side-location-section {
+    width: 45%;
+    display: inline-block;
+    margin-left: 55px
+}
+div.img-right-side-location-section img {
+    width: 100%
+}
+p.second-pharagraph-location-section {
+    margin-top: 20px
+}
+
+/*Start Media Query of Location Section*/
+@media (max-width: 767px) {
+    #Location div.container {
+        width: 90%;
+        margin: 70px auto
+    }
+    div.left-side-location-section {
+        width: 90%;
+        margin: auto;
+        display: block
+    }
+    div.img-right-side-location-section {
+        width: 90%;
+        display: block;
+        margin: 30px auto
+    }
+}
+@media (min-width:767px) and (max-width:850px) {
+    #Location div.container {
+        width: 90%;
+        margin: 70px auto
+    }
+    div.left-side-location-section {
+        width: 70%;
+        display: block;
+        margin: auto
+    }
+    div.img-right-side-location-section {
+        width: 70%;
+        display: block;
+        margin: 30px auto
+    }
+}
+@media (min-width:850px) and (max-width:1200px){
+    #Location div.container {
+        width: 90%;
+        margin: 70px auto
+    }
+    div.left-side-location-section{
+        width: 40%;
+        display: inline-block;
+        vertical-align: top
+    }
+    div.left-side-location-section p{
+        font-size: 16px
+    }
+    div.img-right-side-location-section{
+        width: 50%;
+        margin-top: 30px;
+        display: inline-block
+    }
+}
+/*End Media Query of Location Section*/
+
+/**************************/
+/*End Location Section*/
+/**************************/
+
+/**************************/
+/*Start Baking Section*/
+/**************************/
+#Baking div.container{
+    width: 80%;
+    margin: 70px auto
+}
+div.container div.title{
+    text-align: center;
+    margin-bottom: 30px
+}
+div.img-baking-group{
+    /* background-color: aqua; */
+    text-align: center
+}
+div.img-baking{
+    display: inline-block;
+    width: 33%;
+    padding: 12px
+}
+div.img-baking img{
+    width: 100%
+}
+div.img-baking h4{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 15px
+}
+
+/*Start Media Query of Baking Section*/
+@media (max-width: 767px) {
+   #Baking div.container{
+        width: 90%;
+        margin: 70px auto
+    }
+    div.container div.title{
+        margin-bottom: 15px;
+    }
+    div.img-baking{
+        display: block;
+        width: 90%;
+        padding: 0px;
+        margin: 50px auto
+    }
+}    
+@media (min-width: 767px) and (max-width: 992px){
+    #Baking div.container{
+        width: 90%;
+        margin: 70px auto
+    }
+    .img-baking-group div.img-baking{
+        width: 47%;
+        padding: 15px;
+        margin: 50px auto
+    }
+    .img-baking-group div.right{
+        display: block;
+        margin: auto
+    }
+}
+/*End Media Query of Baking Section*/
+
+/**************************/
+/*End Baking Section*/
+/**************************/
+
+/**************************/
+/*Start Contact-Info Section*/
+/**************************/
+section#Contact{
+    background-color: #eee
+}
+#Contact div.container{
+    width: 80%;
+    margin: auto;
+    padding: 70px 0
+}
+div.left-side-contact-section{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%
+}
+div.right-side-map-contact-section{
+    display: inline-block;
+    width: 50%;
+    margin-left: 80px
+}
+div.right-side-map-contact-section iframe{
+    width: 100%
+}
+div.left-side-contact-section p.second-pharagraph-contact-section {
+    margin-top: 20px
+}
+div.left-side-contact-section ul{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0
+}
+div.left-side-contact-section ul li{
+    padding: 0;
+    font-size: 17px;
+    color: #686868;
+    margin-bottom: 2px;
+    line-height: 3em
+}
+div.left-side-contact-section ul li i{
+    padding-right: 20px
+}
+
+/*Start Media Query of Contact Section*/
+@media (max-width: 767px) {
+    #Contact div.container{
+        width: 90%;
+        margin: 70px auto
+    }
+    div.left-side-contact-section{
+        display: block;
+        width: 90%;
+        margin:0 auto 20px
+    }
+    div.right-side-map-contact-section{
+        display: block;
+        width: 90%;
+        margin: auto
+    }
+}
+@media (min-width: 767px) and (max-width:850px){
+    #Contact div.container{
+        width: 90%;
+        margin: 70px auto
+    }
+    div.left-side-contact-section{
+        width: 70%;
+        display: block;
+        margin: auto
+    }
+    div.right-side-map-contact-section{
+        width: 70%;
+        display: block;
+        margin: 30px auto
+    }
+}
+@media (min-width:850px) and (max-width:1200px){
+    #Contact div.container{
+        width: 90%;
+        margin: 70px auto
+    }
+    div.left-side-contact-section{
+        width: 42%;
+        display: inline-block;
+        vertical-align: top
+    }
+    div.right-side-map-contact-section{
+        width: 50%;
+        display: inline-block;
+        margin-left: 55px
+    }
+}
+/*End Media Query of Contact Section*/
+
+/**************************/
+/*End Contact-Info Section*/
+/**************************/
+
+/****************************/
+/*Start General Info Section*/
+/****************************/
+
+section#General-Info-Section{
+    background-color: #403D38
+}
+#General-Info-Section div.container{
+    width: 80%;
+    margin: auto;
+    padding: 70px 0
+}
+div.general-info-group div.general-info-divs{
+    display: inline-block;
+    vertical-align: top;
+    width: 24.8%
+}
+div.contact-details{
+    background-image: url(../images/contact-details-map.png);
+    background-size: 100% 100%;
+    background-position: center center;
+} 
+div.general-info-divs h4{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 25px
+}
+div.general-info-divs p{
+    color: #969696;
+    line-height: 1.86em
+}
+div.general-info-divs p.first-pharagraph-general-info-section{
+    margin-bottom: 20px
+}
+div.general-info-divs ul{
+    list-style-type: none
+}
+div.general-info-divs ul li{
+    padding: 10px 0;
+    color: #969696;
+    border-bottom: 1px solid #96969625
+}
+div.general-info-divs ul li i{
+    padding-right: 5px
+}
+
+/*Start Media Query of General Info Section*/
+@media (max-width: 767px) {
+    #General-Info-Section div.container{
+        width: 90%;
+        margin: auto;
+        padding: 70px 0
+    }
+    div.general-info-group div.general-info-divs{
+        width: 90%;
+        display: block;
+        margin-bottom: 25px
+    }
+}
+@media (min-width: 767px) and (max-width: 850px) {
+    #General-Info-Section div.container{
+        width: 90%;
+        margin: auto;
+        padding: 70px 0 
+    }
+    div.general-info-group div.general-info-divs{
+        width: 49%;
+        display: inline-block;
+        margin-bottom: 25px
+    }
+}
+@media (min-width: 850px) and (max-width: 992px){
+    #General-Info-Section div.container{
+        width: 90%;
+        margin: auto;
+        padding: 70px 0 
+    }
+    div.general-info-group div.general-info-divs{
+        width: 33%;
+        display: inline-block;
+        margin-bottom: 25px   
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    #General-Info-Section div.container{
+        width: 90%;
+        margin: auto;
+        padding: 70px 0 
+    }
+    div.general-info-group div.general-info-divs{
+        width: 24%;
+        display: inline-block  
+    }
+}
+/*End Media Query of General Info Section*/
+
+/**************************/
+/*End General Info Section*/
+/**************************/
+
+/**********************/
+/*Start Footer Section*/
+/**********************/
+section#Footer{
+    background-color: #353330
+}
+section#Footer div.container{
+    width: 80%;
+    margin: auto;
+    padding: 70px 0
+}
+div.img-footer{
+    text-align: center;
+}
+div.img-footer img{
+    width:30%
+}
+div.img-footer p{
+    color: #777;
+    margin: 25px
+}
+div.img-footer a{
+    text-decoration: none;
+    color: wheat;
+    margin-right: 10px;
+    transition: color 0.5s ease
+}
+div.img-footer a:hover{
+    color: blueviolet
+}
+/*Start Media Query Of Footer Section*/
+@media (max-width: 767px) {
+    section#Footer div.container{
+        width: 90%;
+        margin: auto;
+        padding: 70px 0
+    }
+    div.img-footer img{
+        width:70%
+    }
+}
+/*End Media Query Of Footer Section*/
+
+
+/**********************/
+/*End Footer Section*/
+/**********************/
